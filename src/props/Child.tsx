@@ -1,9 +1,18 @@
 import React from 'react'
 
-function Child() {
-  return (
-    <div>Child</div>
-  )
+interface ChildProps {
+    color: string;
+    onClick: () => void
+    children ?: {}
 }
 
-export default Child
+
+export function Child({ color   , onClick}: ChildProps) {
+    return (
+        <div>{color}
+        
+        <button onClick={onClick}>Click me</button>
+        </div>
+    )
+}
+

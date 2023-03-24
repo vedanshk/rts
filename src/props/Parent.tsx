@@ -1,9 +1,13 @@
 import React from 'react'
-import Child from './Child';
+import {Child } from './Child';
 function Parent() {
   return (
-    <Child />
-  )
-}
+    <Child color="red" onClick={() => console.log("Clicked")} >
 
-export default Parent
+    </Child>
+  )
+};
+
+
+
+export default Parent;
